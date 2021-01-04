@@ -19,7 +19,7 @@ def run_all():
     runner = HTMLTestRunner(stream=f,
                             title='CMS平台接口测试用例报告',
                             description='接口测试用例执行情况：',
-                            tester='dcs_xiaohuang')
+                            tester='多测师-黄sir')
     runner.run(discover)
     f.close()
     sendmail = SendMail(send_msg=filename,attachment=filename)
