@@ -13,7 +13,7 @@ def run_all():
     test_path = r'D:\workspace\Dcs09_Api_auto\testcase'
     path = r'D:\workspace\Dcs09_Api_auto\report'
     now = time.strftime('%Y-%m-%d-%H-%M-%S')
-    filename = path+'\\'+str(now)+'_api_report.html'
+    filename = path+'\\'+'api_report.html'
     f = open(file=filename,mode='wb')
     discover = unittest.defaultTestLoader.discover(start_dir=test_path,pattern='Test*.py')
     runner = HTMLTestRunner(stream=f,

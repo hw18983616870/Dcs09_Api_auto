@@ -14,6 +14,7 @@ class Test_Login(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls) -> None:
+
         cls.session = requests.Session()
         Test_Api.set_session(cls.session)
         Test_Api.get_session()
